@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	
+	<style>
+        /* Estilos CSS para el botón */
+        .botonGrande {
+            padding: 15px 25px; /* Ajusta el tamaño del botón */
+            font-size: 20px; /* Tamaño del texto dentro del botón */
+            background-color: green; /* Color de fondo del botón */
+            border: none; /* Elimina el borde del botón */
+            border-radius: 8px; /* Añade esquinas redondeadas */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        }
+        
+        #miDiv3 {
+            width: 300px;
+            height: 1370px;
+            background-color: rgb(9, 213, 192);
+            border: 1px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+     
+   
+        
+    </style>
+	
+    <meta charset="UTF-8">
+
+    <title>Formulario</title>
+</head>
+<body>
+
+
+    
+    <form action="TablaJsp.jsp" method="post">
+		
+		<div id="miDiv3">
+		
+		<h1>Registrate:</h1>
+	
+		<p><label for="usuario">Usuario: <input type="text" name="usuario"></label></p>
+		<p><label for="contrasena">Contraseña: <input type="password" name="contrasena"></label></p>  <br>
+
+    	<h1>Rellenar Formulario: </h1>
+    	<br>
+		
+		<p><label for="dni">DNI: <input type="number" name "dni"></label></p>
+		 <p><label for="apellido">Apellido: <input type="text" name="apellido"></label></p>
+        <p><label for="nombre">Nombre: <input type="text" name="nombre"></label></p>
+        <p><label for="edad">Edad: <input type="number" name="edad"></label></p>    <br>
+        
+        <p><b>Sexo:</b></p>
+        <input type="radio" name="sexo" value="MASCULINO" checked>
+            <label>Masculino</label>
+        <input type="radio" name="sexo" value="FEMENINO">
+            <label>Femenino</label>    <br>
+        
+        <p><label for="pais">Pais: <input type="text" name="pais"></label></p>    
+        <p><label for="provincia">Provincia: <input type="text" name="provincia"></label></p>  
+        <p><label for="ciudad">Ciudad: <input type="text" name="ciudad"></label></p>        <br>
+        
+        <p><label for="peso">Peso (kg): <input type="number" name="peso"></label></p>    <br>
+        
+        <p><b>Faixa:</b></p>
+        <input type="radio" name="faixa" value="BLANCO" checked>
+            <label>BLANCO</label>
+        <input type="radio" name="faixa" value="AZUL">
+            <label>AZUL</label>
+        <input type="radio" name="faixa" value="VIOLETA">
+            <label>VIOLETA</label>
+        <input type="radio" name="faixa" value="MARRON">
+            <label>MARRON</label>
+        <input type="radio" name="faixa" value="NEGRO">
+            <label>NEGRO</label>   
+        
+       	<p><label for="grados">Grados: <input type="number" name="grados"></label></p>       
+        
+        <p><label for="academia">Academia: <input type="text" name="academia"></label></p>       <br>
+          
+        <p><label>Categoría Edad:
+            <select name="cate_edad">
+                <option value="kid">KID</option>
+                <option value="juvenil">JUVENIL</option>
+                <option value="adulto" selected>ADULTO</option>
+                <option value="master_1">MASTER 1</option>
+                <option value="master_2">MASTER 2</option>
+                <option value="master_3">MASTER 3</option>
+                <option value="master_4">MASTER 4</option>
+                <option value="master_5_mas">MATER 5 O MÁS</option>
+            </select>
+        </label></p>    <br>
+        
+        <p><label>Categoría Peso:
+            <select name="cate_peso">
+                <option value="galo">GALO</option>
+                <option value="pluma">PLUMA</option>
+                <option value="pena">PENA</option>
+                <option value="leve">LEVE</option>
+                <option value="medio" selected>MEDIO</option>
+                <option value="medio_pesado">MEDIO PESADO</option>
+                <option value="pesado">PESADO</option>
+                <option value="super_pesado">SUPER PESADO</option>
+                <option value="pesadisimo">PESADÍSIMO</option>
+            </select>
+        </label></p>    <br>
+        
+         	<p><label for="numero_tel">Numero de teléfono: <input type="tel" name="numero_tel"></label></p>    
+        
+        <p><label for="email">Correo electrónico: <input type="email" name="email"></input></label></p>   
+        
+        <br>  <br>
+        <br>
+        <button class="botonGrande" type="submit">- Registrarme -</button>
+        
+        </div>
+
+    </form>
+    
+    <br>
+    <br>
+    <h3><a href='Loggin.jsp'><b>Si ya tiene una cuenta, pulse aquí para ir al Loggin</b></a></h3>
+
+</body>
+</html>
